@@ -1,0 +1,12 @@
+LEO     - create database with koalas                          
+JAIME   - style the header                                    
+    - client side
+CK      - source script into html
+CK      - function to add koalas
+        - function to refresh table with koalas
+        - function to mark koala 'ready for transfer'
+
+    - server sider
+MARIFEL - route to get all koalas
+MARIFEL - route to add new koalas
+LEO     - route to update koala 'ready for transfer'
