@@ -33,7 +33,7 @@ pool.on('error', (error) => {
 koalaRouter.put('/:id', (req, resp) => {
 
     // get ID from params
-    let id = params.id;
+    let id = req.params.id;
     // get 'isReady' from req.body
     let isReady = req.body.isReady;
 
