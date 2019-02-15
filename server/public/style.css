@@ -2,6 +2,7 @@ header {
     background-color: #B671E3;
 }
 h1 {
+   
     color: #6EF64D
 }
 h3 {
@@ -14,8 +15,15 @@ input {
     background-color: #4DEAF6;
 }
 button {
-    background-color: #6EF64D
+   background-color: #6EF64D
+   
 }
 h2 {
     background-color: #1FB6F9
+}
+th {
+    color:  #530B33
+}
+tbody {
+    color: #6EF64D
 }
