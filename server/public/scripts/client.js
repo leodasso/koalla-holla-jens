@@ -11,7 +11,6 @@ $( document ).ready( function(){
 
 function setupClickListeners() {
 
-
   $( '#addButton' ).on( 'click', function(){
     console.log( 'in addButton on click' );
     let name = $('#nameIn').val();
@@ -30,7 +29,6 @@ function setupClickListeners() {
       notes: notes,
     };
     console.log('koala on click:', name, age, gender, readyForTransfer, notes,);
-    
     // call saveKoala with the new obejct
     saveKoala( koalaToSend );
   }); 
