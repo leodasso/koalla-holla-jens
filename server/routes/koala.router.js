@@ -40,7 +40,7 @@ koalaRouter.get('/', (req, res) => {
 
 
 // POST
-app.post('/', (req, res) => {
+koalaRouter.post('/', (req, res) => {
     console.log('sending via POST', req.body);
     // expect koalaToSend {name, age, gender, readyForTransfer, notes }
     pool.query(`INSERT INTO "koalas" ("name", "age", "gender", "readyForTransfer", "notes") 
