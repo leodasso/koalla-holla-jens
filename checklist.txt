@@ -6,7 +6,9 @@ CK     X - function to add koalas
         - function to refresh table with koalas
         - function to mark koala 'ready for transfer'
 
+
     - server sider
-MARIFEL - route to get all koalas
-MARIFEL - route to add new koalas
+MARIFEL X- route to get all koalas
+MARIFEL X- route to add new koalas
 LEO     - route to update koala 'ready for transfer'
+marifel - get and post
