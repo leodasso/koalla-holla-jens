@@ -1,8 +1,8 @@
 LEO     - create database with koalas                          
 JAIME   - style the header                                    
     - client side
-CK      - source script into html
-CK      - function to add koalas
+CK     X - source script into html
+CK     X - function to add koalas
         - function to refresh table with koalas
         - function to mark koala 'ready for transfer'
 

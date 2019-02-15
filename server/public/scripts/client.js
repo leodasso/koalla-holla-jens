@@ -10,18 +10,25 @@ $( document ).ready( function(){
 }); // end doc ready
 
 function setupClickListeners() {
+
   $( '#addButton' ).on( 'click', function(){
     console.log( 'in addButton on click' );
+    let name = $('#nameIn').val();
+    let age = $('#ageIn').val();
+    let gender = $('#genderIn').val();
+    let readyForTransfer = $('#readyForTransferIn').val();
+    let notes = $('#notesIn').val();
     // get user input and put in an object
     // NOT WORKING YET :(
     // using a test object
     let koalaToSend = {
-      name: 'testName',
-      age: 'testName',
-      gender: 'testName',
-      readyForTransfer: 'testName',
-      notes: 'testName',
+      name: name,
+      age: age,
+      gender: gender,
+      readyForTransfer: readyForTransfer,
+      notes: notes,
     };
+    console.log('koala on click:', name, age, gender, readyForTransfer, notes,);
     // call saveKoala with the new obejct
     saveKoala( koalaToSend );
   }); 
