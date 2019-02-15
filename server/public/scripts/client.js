@@ -49,7 +49,7 @@ function saveKoala( newKoala ){
     data: newKoala
   }).then( function(){
     console.log('back from POST');
-    // CALL DISPLAY KOALAS HERE <-------
+    getKoalas();
   }).catch( function(error) {
     alert('POST request failed', error);
   });
