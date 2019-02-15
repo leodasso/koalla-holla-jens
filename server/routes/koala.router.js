@@ -23,10 +23,24 @@ pool.on('error', (error) => {
 });
 
 
-// GET
+
+// GET all koalas 
+koalaRouter.get('/', (req, res) => {
+    console.log('GET /koala');
+    // expect koalaToSend { name, age, gender, readyForTransfer, notes }
+    pool.query(`SELECT * FROM "koalas" ORDER BY "id";`)
+        .then((results) => {
+            console.log('results from select', results.rows);
+            res.send(results.rows);
+        }).catch((error) => {
+            console.log('error with koalas select', error);
+            res.sendStatus(500);
+        });
+});
 
 
 // POST
+
 
 
 // PUT - modifying data
@@ -55,7 +69,6 @@ koalaRouter.put('/:id', (req, resp) => {
         }
     )
 });
-
 
 // DELETE
 
