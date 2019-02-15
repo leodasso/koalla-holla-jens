@@ -25,7 +25,7 @@ pool.on('error', (error) => {
 
 
 // GET all koalas 
-router.get('/', (req, res) => {
+koalaRouter.get('/', (req, res) => {
     console.log('GET /koala');
     // expect koalaToSend { name, age, gender, readyForTransfer, notes }
     pool.query(`SELECT * FROM "koalas" ORDER BY "id";`)
